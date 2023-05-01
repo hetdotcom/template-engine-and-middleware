@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>User Data</h1>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Username<br /></th>
+          <th>Fullname</th>
+          <th>Phone</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i = 0; i < userdata.length; i++) { %>
+        <tr>
+          <td><%= userdata[i].username %></td>
+          <td><%= userdata[i].fullname %></td>
+          <td><%= userdata[i].phone %></td>
+          <td><%= userdata[i].email %></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>
